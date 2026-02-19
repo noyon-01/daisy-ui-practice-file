@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="acid">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daisy-ui-practice-file</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <section class="color-section flex justify-center items-center gap-5 p-16 bg-secondary-content">
+        <button class="btn bg-primary text-primary-content">Daisy UI Button</button>
+        <button class="btn bg-primary/70 text-primary-content">Daisy UI Button</button>
+        <button class="btn bg-secondary text-secondary-content">Daisy UI Button</button>
+    </section>
+
+    <section data-theme="dark" class="theme-section flex justify-center items-center gap-5 p-16">
+        <button class="btn bg-primary glass btn-wide">Daisy UI Button</button>
+    </section>
+
+    <section class="button-section p-16 flex justify-center items-center gap-5">
+        <button class="btn btn-neutral btn-soft btn-lg"><span class="loading loading-spinner"></span>Daisy UI
+            Button</button>
+        <button class="btn btn-primary btn-lg">Daisy UI Button</button>
+        <button class="btn btn-secondary btn-soft btn-lg">Daisy UI Button</button>
+        <button class="btn btn-accent btn-lg">Daisy UI Button</button>
+        <button class="btn btn-info btn-outline btn-lg">Daisy UI Button</button>
+        <button class="btn btn-success btn-lg">Daisy UI Button</button>
+        <button class="btn btn-warning btn-soft btn-lg">Daisy UI Button</button>
+        <button class="btn btn-error btn-lg"><span class="loading loading-spinner"></span>Daisy UI Button</button>
+    </section>
+
+    <section data-theme="dark" class="dropdown-section p-16 flex justify-center items-center gap-5">
+        <!-- change popover-1 and --anchor-1 names. Use unique names for each dropdown -->
+        <button class="btn btn-warning" popovertarget="popover-1" style="anchor-name:--anchor-1">DaisyUI Button Item
+            section</button>
+        <ul class="dropdown menu w-52 rounded-box bg-base-100 shadow-sm" popover id="popover-1"
+            style="position-anchor:--anchor-1">
+            <li class="btn btn-secondary"><a>Item 1</a></li>
+            <li class="btn btn-secondary"><a>Item 2</a></li>
+            <li class="btn btn-secondary"><a>Item 3</a></li>
+        </ul>
+        <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-primary m-1">Click To Open Dropdown</div>
+            <ul tabindex="-1" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                <li class="btn btn-info"><a>Item 1</a></li>
+                <li class="btn btn-success"><a>Item 2</a></li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+
+</html>
